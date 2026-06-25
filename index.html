@@ -4,8 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Proposta Interativa — Designeo Studio</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+@font-face {
+  font-family: 'POPFUN';
+  src: url('POPFUN.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('CabinetGrotesk-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#F2DAAF;--preto:#061923;--vm:#C22B15;--am:#F0AC04;--vd:#017B41;--az:#016588;}
 body{background:var(--bg);color:var(--preto);font-family:'Cabinet Grotesk',sans-serif;min-height:100vh}
@@ -85,6 +138,8 @@ body{background:var(--bg);color:var(--preto);font-family:'Cabinet Grotesk',sans-
 .footer-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .footer-logo{font-family:'POPFUN',sans-serif;font-size:16px;letter-spacing:.1em;color:rgba(242,218,175,.3)}
 .footer-info{font-size:10px;color:rgba(242,218,175,.3);line-height:1.7;text-align:right}
+.btn-insta{color:rgba(242,218,175,.5);text-decoration:none;transition:color .15s}
+.btn-insta:hover{color:var(--am)}
 @media(max-width:600px){
   .hdr,.hero,.main,.resumo,.footer{padding-left:18px;padding-right:18px}
   .items-grid{grid-template-columns:1fr 1fr}
@@ -196,7 +251,7 @@ body{background:var(--bg);color:var(--preto);font-family:'Cabinet Grotesk',sans-
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">Designeo Studio</div>
-    <div class="footer-info">Daniel Dornas · Designer Gráfico & Brand Strategist<br>(24) 98125-4849 · @designeostudio</div>
+    <div class="footer-info">Daniel Dornas · Designer Gráfico & Brand Strategist<br><a class="btn-insta" id="btn-insta" href="http://wa.me/5524981254849" target="_blank">(24) 98125-4849</a> · <a class="btn-insta" id="btn-insta" href="http://instagram.com/designeostudio" target="_blank">@designeostudio</a> </div>
   </div>
 </footer>
 <script>
